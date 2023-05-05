@@ -4,13 +4,13 @@
 
 <div>
     <h1>Profile Page<h1>
-    <img src="client/public/img/profilePage.png"/>
+    <img src="public/img/profilePage.png"/>
 </div>
 <div>
     <h1>Wall<h1>
-    <img src="client/public/img/wall.png"/>
+    <img src="public/img/wall.png"/>
 </div>
 <div>
     <h1>Posts Page<h1>
-    <img src="client/public/img/memberPost.png"/>
+    <img src="public/img/memberPost.png"/>
 </div>
