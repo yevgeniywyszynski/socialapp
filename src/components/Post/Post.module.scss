@@ -1,0 +1,92 @@
+.post {
+  margin: 20px 20px 20px 20px;
+  -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
+  overflow: hidden;
+  .postContainer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .userPostInfoContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .userPostInfo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .userPostInfoImgWrapper {
+          height: 45px;
+          width: 45px;
+          .userPostAvatar {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+        }
+        .userPostInfoTime {
+          display: flex;
+          flex-direction: column;
+          gap: 5px;
+          .userPostNameWrapper {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            .userPostVerifedIcon {
+              color: #1c9be9;
+              font-size: 16px;
+            }
+          }
+          .userPostName {
+            font-size: 14px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+          }
+          .userPostingTime {
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    .userPostContent {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      .userPostText {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+      }
+      .userPostContentImgWrapper {
+        .userPostImg {
+          width: 100%;
+          max-height: 400px;
+          object-fit: cover;
+        }
+      }
+    }
+    .userPostInterAction {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .userPostActionItem {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        .likeIcon {
+          color: #ed201f;
+        }
+        .userActionItem {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

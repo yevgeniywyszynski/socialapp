@@ -1,0 +1,69 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 20px;
+  height: 50px;
+  border-bottom: 1px solid #abd7fc;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  .navBarLeft {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .logo {
+      font-size: 20 px;
+      font-weight: 700;
+      color: #3e8ccb;
+    }
+    .navSearchInputContainer {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      gap: 10px;
+      border: 1px solid #abd7fc;
+      border-radius: 5px;
+      .navbarSearchInput {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 500px;
+      }
+    }
+  }
+  .navBarRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .navLinkMyProfile {
+      text-decoration: none;
+      color: #000;
+      cursor: pointer;
+    }
+    .navUserContainer {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .navUserAvatarWrapper {
+        width: 30px;
+        height: 30px;
+        .userImg {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+      .navUserName {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.logo {
+  text-decoration: none;
+}

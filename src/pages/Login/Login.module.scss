@@ -1,0 +1,85 @@
+.login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(137, 196, 244);
+  .loginContainer {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    background-color: #fff;
+    min-height: 500px;
+    overflow: hidden;
+    .leftSide {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      color: #fff;
+      background: linear-gradient(
+          rgba(137, 196, 244, 0.5),
+          rgba(137, 196, 244, 0.5)
+        ),
+        url("https://images.pexels.com/photos/3856033/pexels-photo-3856033.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+      background-size: cover;
+      background-position: center;
+      .loginTitle {
+        font-size: 60px;
+      }
+      .loginSubtitle {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+      }
+      .loginAccount {
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .loginRegisterBtn {
+        padding: 10px 25px;
+        width: 50%;
+        border: none;
+        border-radius: 25px;
+        color: #3e8ccb;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+    .rightSide {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      .loginText {
+        font-size: 30px;
+        color: #3e8ccb;
+        font-weight: 700;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .loginInput {
+          border: none;
+          border-bottom: 1px solid #3e8ccb;
+          padding: 10px 15px;
+          outline: none;
+        }
+        .loginBtn {
+          padding: 10px 25px;
+          width: 50%;
+          border: none;
+          border-radius: 25px;
+          color: #fff;
+          background-color: #3e8ccb;
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

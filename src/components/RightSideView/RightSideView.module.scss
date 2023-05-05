@@ -1,0 +1,82 @@
+.right {
+  position: sticky;
+  top: 50px;
+  height: calc(100vh - 50px);
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .rightContainer {
+    padding: 20px;
+    margin: 20px 20px 20px 20px;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 25px;
+    .rightItem {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .rightTextItem {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .rightSideUserContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .onlineIcon {
+          width: 12px;
+          height: 12px;
+          background-color: limegreen;
+          border-radius: 50%;
+          position: absolute;
+          top: -2px;
+          left: 20px;
+        }
+        .rightSideLastActiveText {
+          font-size: 12px;
+          font-weight: 100;
+        }
+        .userInfoWrapper {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          position: relative;
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+          .rightSugUserName {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+        .sugUserBtnWrapper {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .btnFolow {
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #3e8ccb;
+            border-radius: 5px;
+          }
+          .btnDismiss {
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #fb1c00;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}
