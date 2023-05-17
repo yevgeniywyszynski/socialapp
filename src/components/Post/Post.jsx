@@ -20,10 +20,8 @@ export default function Post({ post, key }) {
   }, []);
 
   useEffect(() => {
-    let a = 5;
-    a = a + 5;
-    console.log(a);
-  }, [like]);
+    console.log("Conflict 2");
+  }, []);
 
   const handleLike = (post) => {
     if (post) {
