@@ -26,6 +26,7 @@ export default function Post({ post, key }) {
   const handleLike = (post) => {
     if (post) {
       setLike(!like);
+      console.log("like");
     }
   };
 
