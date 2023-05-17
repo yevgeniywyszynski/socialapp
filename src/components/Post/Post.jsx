@@ -19,6 +19,9 @@ export default function Post({ post, key }) {
     alert("Branch 2");
   }, []);
 
+  useEffect(() => {
+    console.log("Conflict 2");
+  }, []);
 
   const handleLike = (post) => {
     if (post) {
