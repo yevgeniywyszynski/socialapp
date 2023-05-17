@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Post.module.scss";
 import Comments from "../Comments/Comments";
 import { Link } from "react-router-dom";
@@ -14,6 +14,10 @@ import {
 export default function Post({ post, key }) {
   const [commentOpen, setCommentOpen] = useState(false);
   const [like, setLike] = useState(false);
+
+  useEffect(() => {
+    console.log("This is branch 1!!");
+  }, [like]);
 
   const handleLike = (post) => {
     if (post) {
