@@ -16,8 +16,9 @@ export default function Post({ post, key }) {
   const [like, setLike] = useState(false);
 
   useEffect(() => {
-    console.log("This is branch 1!!");
-  }, [like]);
+    alert("Branch 2");
+  }, []);
+
 
   const handleLike = (post) => {
     if (post) {
