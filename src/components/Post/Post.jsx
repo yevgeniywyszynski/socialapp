@@ -19,6 +19,11 @@ export default function Post({ post, key }) {
     alert("Branch 2");
   }, []);
 
+  useEffect(() => {
+    let a = 5;
+    a = a + 5;
+    console.log(a);
+  }, [like]);
 
   const handleLike = (post) => {
     if (post) {
